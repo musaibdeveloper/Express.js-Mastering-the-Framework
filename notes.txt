@@ -29,6 +29,13 @@ EJS Setup.
 npm i ejs.
 
 Configure ejs 
+app.set("view engine", "ejs");
+
+
+Create a views folder > create a index.ejs.
+
+Replace send with res.render. 
+*** Remove Ejs extension in the function and check the HTML files runs.
 
 
 
