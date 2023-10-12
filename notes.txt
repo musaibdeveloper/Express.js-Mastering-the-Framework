@@ -1,0 +1,40 @@
+What is Express JS : 
+https://expressjs.com/ 
+Web Applications
+Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+
+
+Why Express : 
+HTTP is difficult to use and Express is easy and demanding in the market.
+
+What Is Routing
+
+Routing is the process of selecting and defining paths for IP-packet traffic within or between networks as well as the process of managing network traffic overall. 
+
+
+What is MiddleWare?
+Software that acts as a bridge between an operating system or database and applications, especially on a network.
+
+
+Request and response :
+Request is made by the user to the server.
+Response is the data which is send back by the server. 
+
+Route Parameters.
+Dynamic Routing. Just : it is a parameter and accept any anything after it.
+Access there value use req.params.Username
+
+EJS Setup.
+1. Ejs install
+npm i ejs.
+
+Configure ejs 
+
+
+
+
+
+
+
+
+

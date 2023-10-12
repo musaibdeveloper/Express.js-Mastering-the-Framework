@@ -1,0 +1,27 @@
+{
+  "name": "express.js-mastering-the-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musaibdeveloper/Express.js-Mastering-the-Framework.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musaibdeveloper/Express.js-Mastering-the-Framework/issues"
+  },
+  "homepage": "https://github.com/musaibdeveloper/Express.js-Mastering-the-Framework#readme",
+  "dependencies": {
+    "config": "^3.3.9",
+    "express": "^4.18.2",
+    "mongoose": "^7.6.1",
+    "nodemon": "^3.0.1"
+  }
+}
