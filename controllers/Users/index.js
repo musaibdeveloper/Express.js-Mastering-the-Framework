@@ -49,10 +49,42 @@ router.get("/getuserbyID/:id", async (req, res) => {
 router.get("/getUserbyEmail/:email", async (req, res) => {
   try {
     let userByEmail = req.params.email;
-    console.log(typeof (userByEmail));
+    let findByEmail = await userModel.findOne({userByEmail});
+    if (!findByEmail) {
+      res.status(404).json({ msg: " User Email not found" });
+
+    }
+
+    res.status(200).json(findByEmail)
 
   } catch (error) {
     res.status(404).json({msg : "User not Found"})
+  }
+})
+
+router.get("delete/:email", async (req, res) => {
+  try {
+    let email = req.params.email;
+    let findemail = await userModel.findOneAndDelete({ email: email });
+    if (!findemail) {
+      res.status(404).json({ msg: "Email not found" })
+    }
+
+    res.status(200).json({ msg: "User deleted sucessfully" })
+
+
+  
+  } catch (error) {
+    res.status(404).json({ msg: "Internal Server Error" })
+  }
+});
+
+router.delete("/deleteallUsers", async (req, res) => {
+  try {
+    await userModel.deleteMany({});
+    res.status(200).json({msg : "All users are deleted"})
+  } catch (error) {
+    res.status(500).json({msg : "Internal Server error"})
   }
 })
 

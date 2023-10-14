@@ -15,7 +15,7 @@ app.set("view engine", "ejs");
 app.use(express.json()); //  middleware built-in --> express.json()
 
 app.get("/", (req, res)=> {
-    res.send("hello hanzala")
+    res.send("Home Page")
 })
 
 app.use("/users", userRouter)
